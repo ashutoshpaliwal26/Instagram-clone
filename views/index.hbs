@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="">
+        {{>ProfileUpdater}}
+    </div>
+    
+    <div class='w-full h-10 bg-white'>
+
+    </div>
+    <div class='flex items-center justify-between w-full h-fit p-3'>
+        <div class='w-20 h-20 bg-yellow-500 rounded-full' onClick={handelProfileUpdate}>
+            <img class='w-full h-full rounded-full bg-cover overflow-hidden'
+                src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDR8H0rgV-zmSodkT_erGjzA_VhfWE22Pg7Q&s' />
+        </div>
+        <div>
+            <button class='bg-gray-200 w-fit h-fit rounded-xl text-xs font-bold p-2'>Edit Profile</button>
+        </div>
+        <div>
+            <button class='bg-gray-200 w-fit h-fit rounded-xl text-xs font-bold p-2'>Archieve</button>
+        </div>
+    </div>
+    <div class='m-3'>
+        <p class='text-sm font-bold'>Ashutosh Paliwal</p>
+        <p class='text-sm'>This is bio</p>
+    </div>
+    <div class='flex w-full h-20 border-t border-b border-gray-900'>
+        <div class='flex flex-col justify-center items-center w-full h-full '>
+            <p class='text-sm font-bold'>4</p>
+            <p class='text-sm'>Post</p>
+        </div>
+        <div class='flex flex-col justify-center items-center w-full h-full '>
+            <p class='text-sm font-bold'>12342</p>
+            <p class='text-sm'>followers</p>
+        </div>
+        <div class='flex flex-col justify-center items-center w-full h-full '>
+            <p class='text-sm font-bold'>234423</p>
+            <p class='text-sm'>following</p>
+        </div>
+    </div>
+    <div class='grid grid-cols-3 '>
+        <div class='p-1'>
+            <img src='https://maharajatravels.in/wp-content/uploads/2023/05/bali.jpg' />
+        </div>
+        <div class='p-1'>
+            <img src='https://maharajatravels.in/wp-content/uploads/2023/05/bali.jpg' />
+        </div>
+        <div class='p-1'>
+            <img src='https://maharajatravels.in/wp-content/uploads/2023/05/bali.jpg' />
+        </div>
+        <div class='p-1'>
+            <img src='https://maharajatravels.in/wp-content/uploads/2023/05/bali.jpg' />
+        </div>
+    </div>
+</body>
+
+</html>
