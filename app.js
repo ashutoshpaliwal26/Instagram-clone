@@ -26,7 +26,7 @@ app.use('/signup', signUpRoute);
 app.use('/login', logInRoute);
 
 app.set('view engine', 'hbs');
-hbs.registerPartials('template',path.join(__dirname, 'views/template'))
+hbs.registerPartials(path.join(__dirname, 'views/template'))
 
 app.listen(PORT, ()=>{
     console.log(`App is Running on : http://localhost:${PORT}`);
